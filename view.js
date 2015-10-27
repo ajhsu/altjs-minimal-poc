@@ -1,7 +1,7 @@
 import React from 'react';
-import Store from './store.js'
+import RootStore from './RootStore.js'
 import alt from './alt';
-import action from './action';
+import UserAction from './UserAction';
 
 class AppContainer extends React.Component {
 
@@ -10,9 +10,9 @@ class AppContainer extends React.Component {
     }
 
     render() {
-        let store = Store.getState();
+        let store = RootStore.getState();
 
-        action.DoSomeThing();
+        UserAction.DoSomeThing();
 
         return (
             <div>

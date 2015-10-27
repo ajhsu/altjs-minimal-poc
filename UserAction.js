@@ -1,7 +1,6 @@
 import alt from './alt';
 
-
-class AppAction {
+class UserAction {
 
     DoSomeThing() {
         this.dispatch('something');
@@ -9,4 +8,4 @@ class AppAction {
 
 }
 
-module.exports = alt.createActions(AppAction)
+module.exports = alt.createActions(UserAction)
